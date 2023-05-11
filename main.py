@@ -9,11 +9,17 @@ with open("Hello.txt", "w") as file:
     file.write("Hey there!")
 """
 
-with open("Names.txt", "r") as name_file:
-    with open("README.txt", "r") as message_file:
-        body = message_file.read()
-        for name in name_file:
-
+with open("Names.txt", "r") as nameFile:
+    with open("Message.txt", "r") as messageFile:
+        body = messageFile.read()
+        for name in nameFile:
             mail = "Hello " + name + body
-            with open(name.strip() + ".txt", + ".txt", 'w') as message_file:
-                message_file(mail)
+            with open(name.strip() + ".txt", 'w') as messageFile:
+                messageFile.write(mail)
+
+print("All done, Message created and ready, take a look in your directory.")
+print("--------------------------------------------------------------------------------------------------")
+print("Here is an example of the message created\n")
+
+with open("Dave.txt, "r") as daves:
+    print(daves.read())
