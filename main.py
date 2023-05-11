@@ -21,5 +21,10 @@ print("All done, Message created and ready, take a look in your directory.")
 print("--------------------------------------------------------------------------------------------------")
 print("Here is an example of the message created\n")
 
-with open("Dave.txt, "r") as daves:
-    print(daves.read())
+print("----------------Message to Dave----------------")
+with open("Dave.txt", "r") as dave:
+    print(dave.read() + "\n")
+
+print("----------------Message to Terry----------------")
+with open("Terry.txt", "r") as terry:
+    print(terry.read())
