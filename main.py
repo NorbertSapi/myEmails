@@ -9,6 +9,12 @@ with open("Hello.txt", "w") as file:
     file.write("Hey there!")
 """
 
+print("This part writes some extra message to the message letter.\n")
+f = open("Message.txt", "a")
+f.write("See you soon my friend!")
+f.close()
+
+
 with open("Names.txt", "r") as nameFile:
     with open("Message.txt", "r") as messageFile:
         body = messageFile.read()
